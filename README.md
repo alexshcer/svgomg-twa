@@ -4,7 +4,7 @@ This project uses the
 [Trusted Web Activities](https://developers.google.com/web/updates/2017/10/using-twa) technology
 to wrap [SVGOMG](https://jakearchibald.github.io/svgomg/) in an Android Application.
 
-> :warning: **Important:** This demo is still being maintained, but is now automatically 
+> :warning: **Important:** This demo is still being maintained, but is now automatically 
 generated via [llama-pack](https://www.npmjs.com/package/@llama-pack/cli). We **strongly recommend**
 developers who want to bootstrap their Trusted Web Activity project to use
 [llama-pack]([llama-pack](https://www.npmjs.com/package/@llama-pack/cli)). Since the content
@@ -30,20 +30,20 @@ to which the project was cloned.
 ### Enabling Debug
 
 TWAs require [Digital AssetLinks](https://developers.google.com/digital-asset-links/) to be setup
-on both the application and on the website, in order to enable the validation that allows Chrome to
+on both the application and the website, in order to enable the validation that allows Chrome to
 open the page in full-screen.
 
 For security reasons, the signing key compatible with the setup on
 https://svgomg.firebaseapp.com/ is not committed with the sample code.
 
-It is possible to setup Chrome to skip validation on device to enable testing.
+It is possible to set up Chrome to skip validation on the device to enable testing.
 
 Here are the 2 steps required to achieve this:
 
 1. Enable Chrome to accept command-line parameters:
 
 On the Android Device, go to the Chrome version being used to test the TWA and navigate to
-`chrome://flags`. Search for a setting called `Enable commmand line on non-rooted devices` and
+`chrome://flags`. Search for a setting called `Enable command line on non-rooted devices` and
 change it to `Enabled`. Restarting the browser *multiple* times may be required.
 
 2. Create an Android file with the command-line parameters that allow skipping the TWA validation.
